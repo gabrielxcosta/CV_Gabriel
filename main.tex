@@ -1,0 +1,288 @@
+\documentclass[10pt]{article}
+
+% Stable, Overleaf-compatible academic CV built with the standard article class.
+\usepackage[letterpaper,margin=0.68in,top=0.58in,bottom=0.62in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{needspace}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{hyperref}
+
+\definecolor{accent}{HTML}{244A67}
+\definecolor{body}{HTML}{222222}
+\definecolor{muted}{HTML}{626A70}
+\definecolor{rule}{HTML}{B8C5CF}
+\definecolor{pending}{HTML}{7A5A20}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=accent,
+  linkcolor=accent,
+  pdfauthor={Gabriel Ferreira da Costa},
+  pdftitle={Academic Curriculum Vitae -- Gabriel Ferreira da Costa},
+  pdfsubject={PhD application in Computer Science},
+  pdfkeywords={Graph Neural Networks, Complex Networks, Time-Series Forecasting, Computer Science}
+}
+\urlstyle{same}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.28em}
+\setlength{\tabcolsep}{0pt}
+\setlist[itemize]{leftmargin=1.25em,itemsep=0.12em,topsep=0.18em,parsep=0pt,partopsep=0pt}
+\raggedbottom
+\emergencystretch=2em
+
+\titleformat{\section}
+  {\needspace{3\baselineskip}\large\bfseries\color{accent}}
+  {}{0pt}{}
+  [\vspace{0.12em}{\color{rule}\titlerule}]
+\titlespacing*{\section}{0pt}{0.9em}{0.5em}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\footnotesize\color{muted}Academic Curriculum Vitae}
+\fancyfoot[C]{\footnotesize\color{muted}Updated October 27, 2026}
+\fancyfoot[R]{\footnotesize\color{muted}Page \thepage\ of \pageref*{LastPage}}
+\setlength{\footskip}{20pt}
+
+\newcommand{\contactsep}{\hspace{0.45em}{\color{rule}|}\hspace{0.45em}}
+\newcommand{\pendinginfo}[1]{{\color{pending}\footnotesize #1}}
+\newcommand{\DriveURL}{https://drive.google.com/drive/folders/17r2zD0d75viJ9tw8xQfBAKZtWMtvjVTq?usp=sharing}
+\newcommand{\LattesURL}{https://lattes.cnpq.br/6533107458311261}
+\newcommand{\GitHubURL}{https://github.com/gabrielxcosta}
+\newcommand{\proof}[1]{\nobreak\hspace{0.22em}\href{#1}{\textcolor{accent}{\raisebox{0.05ex}{\scriptsize$\nearrow$}}}}
+\newcommand{\doclink}[2]{\nobreak\hspace{0.22em}\href{#1}{{\footnotesize\color{accent}[#2]}}}
+\newcommand{\UGDiplomaURL}{https://drive.google.com/file/d/1chQ3eVqyCNRk-2CAmvl_kJQ4CWrkX2Yp/view}
+\newcommand{\UGTranscriptURL}{https://drive.google.com/file/d/1OBzErz3kYH--toXf83PsePZqkfEUumNN/view}
+\newcommand{\MScTranscriptURL}{https://drive.google.com/file/d/1dxias6IFazUcAOIyIbnxrxs3XYbOT12-/view}
+\newcommand{\MScEnrollmentURL}{https://drive.google.com/file/d/14dFctLfD1CDWOStPQH6IcHsW_TzsKEXJ/view}
+\newcommand{\CAPESURL}{https://drive.google.com/file/d/1-h8EWgQBNVSRdlaRFe6iMyCkw39tIIzj/view}
+\newcommand{\EFSETURL}{https://drive.google.com/file/d/18v3Xff-xJQqKnbybJqfRGazR6NlC68To/view}
+\newcommand{\ICOneURL}{https://drive.google.com/file/d/1M2AT0UKJaOF6yS4SjeIPE9IpT0UnqUCm/view}
+\newcommand{\ICTwoURL}{https://drive.google.com/file/d/1svA79nIMFWv5lpNJQ_-OrvjGmKTD9qcu/view}
+\newcommand{\TeachingURL}{https://drive.google.com/file/d/1K6EEeQAYRDLbVJaX6XibeydqOLttC0jq/view}
+\newcommand{\BRACISProofURL}{https://link.springer.com/chapter/10.1007/978-3-032-39892-5_2}
+\newcommand{\BRACISPaperURL}{https://drive.google.com/file/d/1xEHXmrJzOGzdaggtMbeAdGOa_5EqG1e8/view}
+\newcommand{\BRACISPresentationURL}{https://drive.google.com/file/d/1zyBz3UhjRjGobSGOrgOsJycLm6Waojwt/view?usp=drive_link}
+\newcommand{\BRACISParticipationURL}{https://drive.google.com/file/d/1ROzB9hxb3h2EFg4ZewHrbCfQ0CJbUTAS/view?usp=drive_link}
+\newcommand{\GEOINFOProofURL}{https://drive.google.com/file/d/1x12glvq9NxPw7d946ycUNCOKZgmrGaUb/view}
+\newcommand{\GEOINFOCertURL}{https://drive.google.com/file/d/1i5f444NoIGzHRU1sIV1cXE-_cM9z-jEO/view}
+\newcommand{\CNMACProofURL}{https://drive.google.com/file/d/1bDbyCyxG6ZIvaxgg64419Brod2SAMfWs/view}
+\newcommand{\CNMACCertURL}{https://drive.google.com/file/d/1bu6DheX8WSEYQNeRHVW5Z-IVWl7YGKRD/view}
+\newcommand{\ReviewerParticipationURL}{https://drive.google.com/file/d/1G_kPnmQDKeUwIZ1xL46MgxQXqlu5EMxw/view}
+\newcommand{\ReviewerActivitiesURL}{https://drive.google.com/file/d/1H_bTVeI1Z9bBqoyFCSAZK9R9sz9DBWXL/view}
+\newcommand{\SaberesTwentyFourAuthURL}{https://drive.google.com/file/d/1FdeQIlAY7XsC58iQPjRLGR_lzgenU8_b/view}
+\newcommand{\SaberesTwentyFourCertURL}{https://drive.google.com/file/d/1TUu0cyqr5NBSP_cgiD7Pv5DKfknjJUfK/view}
+\newcommand{\SaberesTwentyThreeAuthURL}{https://drive.google.com/file/d/1MWM10QkC_0gOM05OC4-pDsqwHMbU08O5/view}
+\newcommand{\SaberesTwentyThreeCertURL}{https://drive.google.com/file/d/1wfzpF-U2KYsZ-VD-rd-tgZLiV_Jpg8mX/view}
+\newcommand{\EOSBFPosterURL}{https://drive.google.com/file/d/1PL9XmCC2E_Qmk3TOCF335ExlDewRfJd4/view}
+\newcommand{\EOSBFCertURL}{https://drive.google.com/file/d/1-BuJeY7IzfOye8Pq_0irq5G95Ot4D8dH/view}
+\newcommand{\SchoolURL}{https://drive.google.com/file/d/1O1wVULub8okaAm_f_OjA2A_iBkr7yReJ/view}
+\newcommand{\REFOPURL}{https://drive.google.com/file/d/1tB2TjGP-zDRyvIGcR2JNQpJjwA1XRZZL/view}
+\newcommand{\ENREDANDOWorkURL}{https://drive.google.com/file/d/1JPgPdtn_2kcRAw7hrL8TwKLFYqtBKidv/view}
+\newcommand{\ENREDANDOCertURL}{https://drive.google.com/file/d/1O7oA9hFp1pLahdar6dGv_X1fsRX6JR20/view}
+\newcommand{\BCCDeclarationURL}{https://drive.google.com/file/d/10JSGgSUkd1m99snP-U_Z9AyTF9s7wqYE/view}
+\newcommand{\MLTutorialURL}{https://drive.google.com/file/d/1AfrJlk9v1GDrOs_uJBx_hAY409BIpSrh/view?usp=drive_link}
+\newcommand{\AluraPythonDataURL}{https://cursos.alura.com.br/degree/certificate/85b22387-c0c4-4305-92f0-281d1bf86221}
+\newcommand{\AluraStatisticsURL}{https://cursos.alura.com.br/degree/certificate/35cf5360-e264-4665-a63f-f6c5c1bdd0cf}
+\newcommand{\AluraGeoPandasURL}{https://cursos.alura.com.br/certificate/d973617a-960f-4f31-b982-53207780c1a3}
+\newcommand{\AluraScrapingURL}{https://cursos.alura.com.br/certificate/32b85afa-2364-4967-ae92-4733bc42ba7e}
+\newcommand{\SecondaryTranscriptURL}{https://drive.google.com/file/d/1vZVNAv6xCK-i_CAacHGebIcbC6LpFIFx/view?usp=sharing}
+\newcommand{\entry}[3]{%
+  \needspace{2.5\baselineskip}%
+  \begin{tabularx}{\linewidth}{@{}X>{\raggedleft\arraybackslash}p{2.35cm}@{}}
+    \textbf{#1} & {\color{muted}\small #2}\\[-0.08em]
+    \multicolumn{2}{@{}p{\linewidth}@{}}{{\itshape #3}}
+  \end{tabularx}\par
+}
+\newcommand{\pub}[2]{%
+  \needspace{3\baselineskip}%
+  \noindent\begin{tabularx}{\linewidth}{@{}>{\bfseries\color{accent}}p{0.34cm}X@{}}
+    #1 & #2
+  \end{tabularx}\par
+}
+\newcommand{\event}[2]{%
+  \needspace{2.2\baselineskip}%
+  {\bfseries\color{accent}#1}\par\nobreak
+  #2\par\vspace{0.18em}
+}
+
+\begin{document}
+\color{body}
+
+% Header
+\begin{minipage}[t]{0.78\linewidth}
+  \vspace{0pt}
+  {\fontsize{21}{23}\selectfont\bfseries\color{accent} Gabriel Ferreira da Costa}\par
+  \vspace{0.18em}
+  {\large M.Sc. Student in Computer Science}\par
+  Federal University of Ouro Preto (UFOP)\par
+  Ouro Preto, Minas Gerais, Brazil\par
+  \vspace{0.45em}
+  \small
+  \href{mailto:gabriel.fc@aluno.ufop.edu.br}{gabriel.fc@aluno.ufop.edu.br}
+  \contactsep
+  \href{mailto:gabrielxcostaxf@gmail.com}{gabrielxcostaxf@gmail.com}\par
+  \href{https://orcid.org/0009-0001-2714-3365}{ORCID: 0009-0001-2714-3365}
+  \contactsep
+  \href{\LattesURL}{Lattes CV}
+  \contactsep \href{\GitHubURL}{GitHub}
+  \contactsep \href{https://www.linkedin.com/in/gabxcostaxf/}{LinkedIn}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.17\linewidth}
+  \vspace{0pt}
+  \raggedleft
+  \includegraphics[width=2.35cm,height=3.14cm,keepaspectratio]{prism-uploads/3x4.pdf}
+\end{minipage}
+
+\section{Research Interests}
+
+Graph Neural Networks; Spatio-Temporal Graph Learning; Time-Series Forecasting; Network Science and Complex Networks; Graph Spectral Analysis; Scientific Machine Learning; Computational Physics.\proof{\LattesURL}
+
+{\footnotesize\color{muted}The blue $\nearrow$ icon opens an official record or supporting document for the corresponding item.}
+
+\section{Education}
+
+\entry{M.Sc. in Computer Science --- Federal University of Ouro Preto (UFOP)}{2025--present}{Ouro Preto, Minas Gerais, Brazil}
+\begin{itemize}
+  \item Research title: \emph{Benchmarking Spatio-Temporal Graph Neural Networks for Time Series Forecasting Across Heterogeneous Graph Domains}.
+  \item Advisor: Prof. Vander Luis de Souza Freitas. Research areas: graph neural networks, complex networks, and time-series forecasting.
+  \item Selected coursework: Algorithms; Data Mining; Neural Networks and Deep Learning; Complex Networks; Digital Image Processing.
+  \item CAPES master's scholarship; full-time, exclusive-dedication appointment (40 hours/week). Researcher at the Intelligent Systems Computing Laboratory (CSILab/UFOP).\doclink{\MScTranscriptURL}{Transcript}\doclink{\MScEnrollmentURL}{Enrollment}\doclink{\CAPESURL}{Scholarship}
+\end{itemize}
+
+\entry{B.Sc. in Physics --- Federal University of Ouro Preto (UFOP)}{2019--2025}{Ouro Preto, Minas Gerais, Brazil}
+\begin{itemize}
+  \item Undergraduate thesis: \emph{Simulation of Epidemiological Models in Temporal Mobility Networks} (original title: \emph{Simulação de Modelos Epidemiológicos em Redes de Mobilidade Temporais}).
+  \item Advisor: Prof. Vander Luis de Souza Freitas. CNPq undergraduate research scholarship during the degree.\doclink{\UGDiplomaURL}{Degree}\doclink{\UGTranscriptURL}{Transcript}
+\end{itemize}
+
+\entry{Secondary Education --- Colégio Batista de Guarulhos (CBG)\doclink{\SecondaryTranscriptURL}{Transcript}}{2016--2018}{Guarulhos, São Paulo, Brazil; completed in 2018}
+
+\section{Research Experience}
+
+\entry{Graduate Researcher and CAPES Fellow --- CSILab/UFOP\doclink{\CAPESURL}{Scholarship}}{2025--present}{Spatio-temporal graph neural networks for graph-based time-series forecasting}
+\begin{itemize}
+  \item Benchmarks deep-learning architectures across heterogeneous graph domains, with emphasis on spatio-temporal dependencies, graph spectral analysis, and reproducible experimental protocols.
+  \item Advisor: Prof. Vander Luis de Souza Freitas. Related output: BRACIS 2026 full paper published in the proceedings listed below.
+\end{itemize}
+
+\entry{Undergraduate Research Fellow --- CNPq / UFOP\doclink{\ICTwoURL}{Proof}}{2024--2025}{River-level forecasting with the TimesFM time-series foundation model; 20 hours/week}
+\begin{itemize}
+  \item Evaluated TimesFM for forecasting river levels in a basin in the Rio Negro region, with comparisons to LSTM and Prophet baselines and attention to flood- and drought-related forecasting.
+\end{itemize}
+
+\entry{Undergraduate Research Fellow --- CNPq / UFOP\doclink{\ICOneURL}{Proof}}{2022--2024}{Epidemiological processes in temporal mobility networks; 20 hours/week}
+\begin{itemize}
+  \item Modeled disease propagation in metapopulation networks with an Eulerian SIR formulation and temporal population inflow/outflow tensors.
+  \item Studied synthetic mobility flows for the Belo Horizonte Metropolitan Region and 2022 IBGE census data, as well as Baidu mobility flows among 303 Chinese cities from January--February 2020; examined unrestricted and topology-constrained network scenarios.
+  \item Related outputs: the GEOINFO 2025 full paper and the CNMAC 2024 extended abstract listed below.
+\end{itemize}
+
+\section{Publications}
+
+\textbf{Full Conference Papers}
+
+\pub{1.}{\textbf{Gabriel F. Costa}, Eduardo J. S. Luz, and Vander L. S. Freitas. ``Benchmarking Spatio-Temporal Graph Neural Networks for Time Series Forecasting Across Heterogeneous Graph Domains.'' In: \emph{Intelligent Systems}, 36th Brazilian Conference on Intelligent Systems (BRACIS 2026), \emph{Lecture Notes in Computer Science}, vol. 17106, pp. 19--33. Springer, Cham, 2027. First published online October 2, 2026. \href{https://bracis.sbc.org.br/2026/bracis/}{BRACIS conference page}.\doclink{\BRACISProofURL}{Proof}\doclink{\BRACISPaperURL}{Paper}}
+
+\pub{2.}{\textbf{Gabriel F. Costa}, Leonardo B. L. Santos, and Vander L. S. Freitas. ``Eulerian SIR Model for Asymmetric Temporal Commuting Networks: Case Study of Chinese Baidu Mobility Data.'' In: \emph{Proceedings of the XXV Brazilian Symposium on Geoinformatics (GEOINFO 2025)}, vol. 25. São José dos Campos: National Institute for Space Research (INPE), 2025. \href{https://mtc-m16c.sid.inpe.br/col/sid.inpe.br/mtc-m16c/2025/06.05.14.34/doc/GeoInfo2025_Paper59.pdf}{Official paper}.\doclink{\GEOINFOProofURL}{Proof}}
+
+\textbf{Extended Abstracts / Proceedings Publications}
+
+\pub{3.}{\textbf{Gabriel F. Costa}, Vander L. S. Freitas, and Leonardo B. L. Santos. ``The SIR Metapopulation Model in a Temporal Commuting Network.'' \emph{Proceeding Series of the Brazilian Society of Computational and Applied Mathematics}, 11(1), pp. 1--2, published January 20, 2025; presented at CNMAC 2024. \href{https://proceedings.sbmac.org.br/sbmac/article/view/4856}{Official publication page}.\doclink{\CNMACProofURL}{Proof}}
+
+\section{Teaching Experience}
+
+\entry{Teaching Internship --- Federal University of Ouro Preto (UFOP)\doclink{\TeachingURL}{Proof}}{2025--2026}{BCC701 --- Computer Programming I; 4 hours/week}
+
+\section{Academic Service}
+
+\entry{Technical Program Committee Member and Reviewer\doclink{\ReviewerParticipationURL}{Participation}\doclink{\ReviewerActivitiesURL}{Reviews}}{2026}{36th Brazilian Conference on Intelligent Systems (BRACIS 2026), Brazilian Computer Society}
+
+\entry{Technical Program Committee Member and Reviewer\doclink{\ReviewerParticipationURL}{Participation}\doclink{\ReviewerActivitiesURL}{Reviews}}{2026}{National Meeting on Artificial and Computational Intelligence (ENIAC 2026), Brazilian Computer Society}
+
+\entry{Undergraduate Thesis Examination Committee Member\doclink{\BCCDeclarationURL}{Declaration}}{2026}{B.Sc. in Computer Science, Federal University of Ouro Preto}
+Committee for Jéssica Giovana Zacarias, \emph{Analysis of the Curriculum Structure of the Federal University of Ouro Preto through Academic Prerequisite Networks} (original title: \emph{Análise da Estrutura Curricular da Universidade Federal de Ouro Preto por Meio de Redes de Pré-Requisitos Acadêmicos}).
+
+\section{Academic Profiles}
+
+\begin{tabularx}{\linewidth}{@{}>{\bfseries\raggedright\arraybackslash}p{3.2cm}@{\hspace{0.65em}}X@{}}
+ORCID & \href{https://orcid.org/0009-0001-2714-3365}{0009-0001-2714-3365}\proof{https://orcid.org/0009-0001-2714-3365} \\
+Lattes CV & \href{\LattesURL}{lattes.cnpq.br/6533107458311261}\proof{\LattesURL} \\
+GitHub & \href{\GitHubURL}{github.com/gabrielxcosta}\proof{\GitHubURL} \\
+LinkedIn & \href{https://www.linkedin.com/in/gabxcostaxf/}{linkedin.com/in/gabxcostaxf}\proof{https://www.linkedin.com/in/gabxcostaxf/} \\
+Google Scholar & \href{https://scholar.google.com/citations?user=bxM5TjgAAAAJ}{Google Scholar profile}\proof{https://scholar.google.com/citations?user=bxM5TjgAAAAJ} \\
+Bibliographic name & COSTA, G. F.\proof{\LattesURL} \\
+Evidence repository & \href{\DriveURL}{Google Drive folder}\proof{\DriveURL}
+\end{tabularx}
+
+\section{Languages}
+
+\begin{tabularx}{\linewidth}{@{}>{\bfseries\raggedright\arraybackslash}p{2.3cm}@{\hspace{0.65em}}X@{}}
+Portuguese & Native\proof{\LattesURL} \\
+English & EF SET: 76/100, C2 Proficient (Reading: 80; Listening: 71), awarded February 17, 2025.\doclink{\EFSETURL}{Certificate}
+\end{tabularx}
+
+\section{Conference Presentations and Academic Events}
+
+\event{2026 --- ENREDANDO\proof{https://pages.giscbr.org/enredando2026/trabalhos.html}}{Poster and lightning talk, ``Benchmarking Spatio-Temporal Graph Neural Networks for Time Series Forecasting Across Heterogeneous Graph Domains,'' Ibero-American School on Networks and Complex Systems, Viçosa, Brazil, July 26--31, 2026.\doclink{\ENREDANDOWorkURL}{Presentation}\doclink{\ENREDANDOCertURL}{Certificate}}
+\event{2026 --- BRACIS 2026}{Oral presentation of ``Benchmarking Spatio-Temporal Graph Neural Networks for Time Series Forecasting Across Heterogeneous Graph Domains,'' 36th Brazilian Conference on Intelligent Systems, Cuiabá, Mato Grosso, Brazil, October 19--22, 2026. Conference participation: 40 hours.\doclink{\BRACISPresentationURL}{Presentation}\doclink{\BRACISParticipationURL}{Certificate}}
+\event{2025 --- GEOINFO\doclink{\GEOINFOCertURL}{Certificate}}{Symposium participation associated with ``Eulerian SIR Model for Asymmetric Temporal Commuting Networks: Case Study of Chinese Baidu Mobility Data,'' XXV Brazilian Symposium on Geoinformatics, São José dos Campos, Brazil.}
+\event{2024 --- CNMAC\doclink{\CNMACCertURL}{Certificate}}{Poster, ``The SIR Metapopulation Model in a Temporal Commuting Network,'' National Congress of Applied and Computational Mathematics, Ipojuca, Brazil.}
+\event{2024 --- Encontro de Saberes UFOP\doclink{\SaberesTwentyFourAuthURL}{Authorship}\doclink{\SaberesTwentyFourCertURL}{Certificate}}{Poster, ``Simulation of Epidemiological Models in Temporal Mobility Networks.''}
+\event{2023 --- Brazilian Physics Society Autumn Meeting\doclink{\EOSBFPosterURL}{Presentation}\doclink{\EOSBFCertURL}{Certificate}}{Presentation, ``The SIR metapopulation model in a temporal commuting network,'' session \emph{Complex Networks, Econophysics and Sociophysics II}, Ouro Preto, Minas Gerais, Brazil, May 21--25, 2023. Authors: \textbf{Gabriel F. Costa}, Matheus M. G. Correia, Leonardo B. L. Santos, and Vander L. S. Freitas.}
+\event{2023 --- Encontro de Saberes UFOP\doclink{\SaberesTwentyThreeAuthURL}{Authorship}\doclink{\SaberesTwentyThreeCertURL}{Certificate}}{Poster, ``Simulation of Epidemiological Models in Temporal Mobility Networks.''}
+
+\section{Additional Academic Training}
+
+\entry{II School on Modelling Infectious Disease Dynamics\doclink{\SchoolURL}{Certificate}}{2025}{Institute for Theoretical Physics Foundation (IFT), São Paulo, Brazil --- short course, 40 hours}
+
+\entry{GeoPandas: Working with Geospatial Data\doclink{\AluraGeoPandasURL}{Certificate}}{2023}{Alura --- online course; original title: \emph{Geopandas: trabalhando com dados geoespaciais}; completed October 19, 2023; 6 hours}
+
+\entry{Introduction to Machine Learning Applied to Physics\doclink{\MLTutorialURL}{Certificate}}{2023}{Brazilian Physics Society Autumn Meeting, Ouro Preto, Minas Gerais, Brazil --- tutorial taught by Henrique Ferreira, 3 hours}
+
+\entry{Python for Data Science --- Training Program\doclink{\AluraPythonDataURL}{Certificate}}{2022}{Alura --- online professional training; official title: \emph{Forma\c{c}\~ao Python para Data Science}; completed December 27, 2022; estimated workload: 86 hours}
+
+\entry{Web Scraping with Python: Collecting Data from the Web\doclink{\AluraScrapingURL}{Certificate}}{2022}{Alura --- online course; original title: \emph{Scraping com Python: coleta de dados na web}; completed December 27, 2022; 10 hours}
+
+\entry{Statistics with Python --- Training Program\doclink{\AluraStatisticsURL}{Certificate}}{2022}{Alura --- online professional training; official title: \emph{Forma\c{c}\~ao Estatística com Python}; completed November 29, 2022; estimated workload: 71 hours}
+
+\section{Technical Skills}
+
+\begin{tabularx}{\linewidth}{@{}>{\bfseries\raggedright\arraybackslash}p{4.2cm}@{\hspace{0.65em}}X@{}}
+Programming Languages and Workflows & Python; Snakemake; C; C++; Bash\proof{\GitHubURL} \\
+Machine Learning and Graph Learning & PyTorch; PyTorch Geometric; PyTorch Geometric Temporal; Scikit-learn; Graph Neural Networks; Spatio-Temporal Graph Neural Networks; graph spectral analysis\proof{\GitHubURL} \\
+Scientific Computing and Data Analysis & NumPy; SciPy; Pandas; Matplotlib; Jupyter; Python multiprocessing; statistical data analysis; web scraping\proof{\GitHubURL} \\
+Geospatial and Network Analysis & GeoPandas; Shapely; OSMnx\proof{\GitHubURL} \\
+Research and Development Tools & Git; Linux; Docker; Slurm; \LaTeX{}; Markdown; VS Code\proof{\GitHubURL} \\
+\end{tabularx}
+
+\section{Selected Public Repositories}
+
+\entry{\href{https://github.com/gabrielxcosta/Spatiotemporal-GNN-Forecasting}{Spatiotemporal GNN Forecasting}\proof{https://github.com/gabrielxcosta/Spatiotemporal-GNN-Forecasting}}{}{Research implementation and experiments investigating spatial and temporal modules in graph neural networks for time-series prediction on static and dynamic graphs.}
+
+\entry{\href{https://github.com/gabrielxcosta/Simulation-of-epidemiological-models-in-temporal-mobility-networks}{Epidemiological Models in Temporal Mobility Networks}\proof{https://github.com/gabrielxcosta/Simulation-of-epidemiological-models-in-temporal-mobility-networks}}{}{Research code and materials for comparing epidemiological processes on temporal mobility networks and aggregated static representations.}
+
+\entry{\href{https://github.com/gabrielxcosta/PCC121---Complex-Networks}{Complex Networks}\proof{https://github.com/gabrielxcosta/PCC121---Complex-Networks}}{}{Implementations and study materials covering assortativity, community detection, scale-free and random networks, graph robustness, cascading failures, and graph theory.}
+
+\section{Leadership and Institutional Activities}
+
+\entry{Communication Board Advisor --- Association of Federal Student Houses of Ouro Preto (REFOP)\doclink{\REFOPURL}{Certificate}}{2019--2020; 2021--2022}{Federal University of Ouro Preto (UFOP), Ouro Preto, Minas Gerais, Brazil}
+Served as an advisor to the Communication Board across two administrative terms: August 1, 2019--August 1, 2020 (20 hours), and August 1, 2021--August 1, 2022 (100 hours); 120 hours total.
+
+\section{Additional Professional Experience}
+
+\entry{Freelance Waiter}{}{Ouro Preto, Minas Gerais, Brazil}
+Seu José; Tenente Pimenta; Recanto Serra do Trovão.
+
+\end{document}
